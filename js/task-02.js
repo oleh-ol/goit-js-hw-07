@@ -45,8 +45,6 @@ gallery.style.cssText =`
     flex-basis: calc((100% - (24px * 2)) / 3);
 
     justify-content: center;
-    align-items: center;
-
     align-items: flex-start;
 
     row-gap: 64px;
@@ -57,23 +55,16 @@ gallery.style.cssText =`
     margin-bottom: 156px
   `;
 
+
 const galleryItem = document.querySelector(".gallery-item")
 galleryItem.style.cssText = `
   display: block;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: cover;
 `;
 
 const galleryImage = document.querySelector(".gallery-img");
 galleryImage.style.cssText = `
+  
   object-fit: cover;
 `;
-
-const img = document.querySelector("img");
-img.style.cssText = `
-  object-fit: cover;
-  overflow: hidden;
-`
-
