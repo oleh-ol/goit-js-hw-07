@@ -67,6 +67,7 @@ destroyBtn.addEventListener('click', destroyBoxes)
 
 function createBoxes() {
 
+  createdBoxes.innerHTML = "";
   const amount = valueInput.value;
   const boxes = [];
 
